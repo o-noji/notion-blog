@@ -169,7 +169,7 @@ export default function Post({ page, blocks }) {
 
       <article className={styles.container}>
         <h1 className={styles.name}>
-          <Text text={page.properties.Title.id} />
+          {/* <Text text={page.properties.Name.title} /> */}
         </h1>
         <section>
           {blocks.map((block) => (
