@@ -56,6 +56,7 @@ export default function Home({ posts }) {
         <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>
           {posts.map((post) => {
+            console.log(post);
             const date = new Date(post.last_edited_time).toLocaleString(
               "en-US",
               {
@@ -69,7 +70,7 @@ export default function Home({ posts }) {
                 <h3 className={styles.postTitle}>
                   <Link href={`/${post.id}`}>
                     <a>
-                      <Text text={post.properties.Name.title} />
+                      <Text text={post.properties.title} />
                     </a>
                   </Link>
                 </h3>
